@@ -1,10 +1,10 @@
-#tests/test_contract.py
+# tests/test_contract.py
 import unittest
 
 from contracting.client import ContractingClient
 client = ContractingClient()
 
-with open('../my_token.py') as f:
+with open('my_token.py') as f:
     code = f.read()
     client.submit(code, name='my_token')
 
